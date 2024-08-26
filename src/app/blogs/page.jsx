@@ -97,11 +97,11 @@ const data = [
 
 const BlogPage = () => {
   const [posts, setPosts] = useState([]);
-  useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/posts")
-      .then((res) => res.json())
-      .then((data) => setPosts(data));
-  }, []);
+  // useEffect(() => {
+  //   fetch("https://jsonplaceholder.typicode.com/posts")
+  //     .then((res) => res.json())
+  //     .then((data) => setPosts(data));
+  // }, []);
   return (
     <div>
       {posts.map((item, id) => {
