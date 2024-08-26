@@ -16,12 +16,12 @@ const NavigationBar = () => {
       title: "About",
     },
     {
-      path: "/contact",
-      title: "Contact",
+      path: "/dashboard",
+      title: "dashboard",
     },
     {
-      path: "/pricing",
-      title: "Pricing",
+      path: "/categories",
+      title: "categories",
     },
     {
       path: "/blogs",

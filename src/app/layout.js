@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className=''>
         <NavigationBar/>
-        {children}
+        <div className="my-8">{children}</div>
         <div>This is footer</div>
       </body>
     </html>

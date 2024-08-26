@@ -1,4 +1,6 @@
+'use client'
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const data = [
   {
@@ -94,9 +96,15 @@ const data = [
 ];
 
 const BlogPage = () => {
+  const [posts, setPosts] = useState([]);
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/posts")
+      .then((res) => res.json())
+      .then((data) => setPosts(data));
+  }, []);
   return (
     <div>
-      {data.map((item, id) => {
+      {posts.map((item, id) => {
         return (
           <div key={id} className="p-2 rounded-md border space-y-2">
             <h4 className="text-lg">{item.author}</h4>
