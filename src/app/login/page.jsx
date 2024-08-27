@@ -21,16 +21,20 @@ const LogInPage = () => {
     };
   }, []);
 
-  console.log(user)
+  console.log(user);
 
   function handleGoogleSignIn() {
-    signInWithPopup(auth, googleProvider);
+    signInWithPopup(auth, googleProvider)
+      .then(() => {
+        console.log("ok");
+      })
+      .catch((err) => console.log(err));
   }
 
   return (
     <div className="flex justify-center mx-4">
       <div
-        onClick={handleGoogleSignIn}
+        onClick={() => handleGoogleSignIn()}
         className="border-2 hover:border-blue-600 duration-200 p-4 rounded-md w-full sm:w-[500px] lg:w-[800px] flex items-center cursor-pointer bg-slate-50"
       >
         <div className="flex-1 text-2xl font-semibold text-slate-600">
