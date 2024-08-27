@@ -13,7 +13,7 @@ const firebaseConfig = {
   projectId: "bangladeshv2demo",
   storageBucket: "bangladeshv2demo.appspot.com",
   messagingSenderId: "333690666157",
-  appId: "1:333690666157:web:b663eccc78c6c71d825a24",
+  appId: "1:333690666157:web:423203ade00fd70a825a24"
 };
 
 // console.log(firebaseConfig)

@@ -25,7 +25,7 @@ const LogInPage = () => {
 
   function handleGoogleSignIn() {
     signInWithPopup(auth, googleProvider)
-      .then(() => {
+      .then((result) => {
         console.log("ok");
       })
       .catch((err) => console.log(err));
